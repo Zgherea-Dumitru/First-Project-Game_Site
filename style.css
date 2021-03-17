@@ -1,26 +1,30 @@
 header {
-    background-color: #f9f6f1ff;
+    background-color:#3E517A;
+}
+
+.flexbox {
+    display: flex;
+    justify-content:space-around;
 }
 
 .flexbox-column {
     display: flex;
-    flex-direction: column;
+    flex-direction : column;
 }
 
 #logo {
-    height: 200px;
     margin-left: auto;
     margin-right: auto;
 }
 
 #sort {
-    height: 200px;
     width: 100%;
-    background-color: #e63b2e;
+    background-color: #3E517A;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 10px;
-    padding-right:10px;
+    margin-top:auto;
+    margin-bottom: auto;
+    padding-left: 50px;
 }
 
 h1 {
@@ -32,13 +36,13 @@ h1 {
 .label {
     font-family: 'Comfortaa', cursive;
     color: #f9f6f1ff;
-    font-size: 18pt;
+    font-size: 12pt;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
 .width50 {
-    width: 50%;
+    width: 25%;
 }
 
 .font-source{
