@@ -1,0 +1,46 @@
+header {
+    background-color: #f9f6f1ff;
+}
+
+.flexbox-column {
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sort {
+    height: 200px;
+    width: 100%;
+    background-color: #e63b2e;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right:10px;
+}
+
+h1 {
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    color: #f9f6f1ff;
+}
+
+.label {
+    font-family: 'Comfortaa', cursive;
+    color: #f9f6f1ff;
+    font-size: 18pt;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.width50 {
+    width: 50%;
+}
+
+.font-source{
+    font-family: 'Source Code Pro', monospace;
+}
