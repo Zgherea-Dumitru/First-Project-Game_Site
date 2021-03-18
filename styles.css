@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:700&display=swap');
+
+body{
+  height: 100vh;
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Rubik', sans-serif;
+}
+
+#games{
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  width: 90vw;
+  margin: 0px auto;
+}
+
+/* Game card style */
+.game{
+
+  display: inline-block;
+  width: 350px;
+  height: 250px;
+  border-radius: 20px;
+  border: 7px solid #615979;
+  background-color: #615979;
+  box-shadow: 0px 15px 0px #3d3650, 0px 20px 7px black;
+
+}
+
+.gameImg{
+  width: auto;
+  height: 65%;
+  background-color: #C4C4C4;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: inset 0 0 3px 7px #473f5e;
+}
+
+.gameName{
+  box-shadow: 0 2px 3px 1px #473f5e;
+  background-color: #615979;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  display: inline;
+  margin: 0px;
+  height: 20%;
+  width: 35%;
+  min-width: 130px;
+  border-radius: 0px 0px 10px 10px;
+  text-align: center;
+}
+
+.lowerBox{
+  height: 35%;
+  width: auto;
+  border-radius: 0px 0px 5px 5px;
+  background-color: #615979;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Buttons style */
+.startButton{
+  font-size: 25px;
+  height: 40%;
+  min-width: 100px;
+  width: 28%;
+  margin-right: 20%;
+  line-height: 35px;
+}
+
+.iButton, .favoriteUnchecked, .favoriteChecked{
+  font-size: 20px;
+  min-width: 25px;
+  width: 10%;
+  height: 35%;
+  margin-right: 6%;
+  line-height: 28px;
+}
+
+.iButton, .startButton, .favoriteUnchecked, .favoriteChecked{
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  top: 0px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  outline: none;
+  transition: all 0.1s ease;
+  box-shadow: 0px 8px 0px #9d2323, 0px 8px 20px #222222;
+  background-color: #E13434;
+  border: 4px solid #d51c1c;
+  -webkit-user-select: none; 
+  -moz-user-select: none;
+}
+
+.favoriteChecked{
+  background-color: #4CAF50;
+  border: 4px solid rgb(66, 160, 88);
+  box-shadow: 0px 8px 0px rgb(53, 131, 71), 0px 8px 20px #222222;
+}
+
+.favoriteChecked:hover{
+  top: 4px;
+  box-shadow: 0px 5px 0px rgb(53, 131, 71), 0px 8px 20px #222222;
+}
+
+.startButton:hover, .iButton:hover, .favoriteUnchecked:hover{
+  top: 4px;
+  box-shadow: 0px 5px 0px #9d2323, 0px 8px 10px #222222;
+}
+
+.startButton:active, .iButton:active, .favoriteUnchecked:active, .favoriteChecked:active{
+  top: 9px;
+  box-shadow: none;
+}
+
+/* Info pop up window */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 200ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 5vh auto;
+  background: #fff;
+  border-radius: 5px;
+  height: 90vh;
+  width: 70vw;
+  position: relative;
+  transition: all 0s ease-in-out;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 0s;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #E13434;
+}
+
+.popUpImg{
+  border-radius: 5px 5px 0px 0px;
+  background-color: #C4C4C4;
+  height: 30%;
+  width: auto;
+}
+
+.popup .content {
+  height: 70%;
+  width: auto;
+  overflow: auto;
+}
