@@ -12,23 +12,27 @@
 <body>
     <header class="flexbox">
         <div id="logo">
-            <img src="/home/pauline/Documents/project1/First-Project-Game_Site/logo-game-studio-red.png" height="150px">
+            <img src="/home/pauline/Documents/project1/First-Project-Game_Site/logo-game-studio-red-horizontal.png">
         </div>
-        <div id="sort">
-            <div class="flexbox-column">
-                <label class="label" for="game-name">Trouve un jeu</label>
-                <input class="width50" type="text" name="game-name" id="game-name">
+        <div>
+            <label class="label" for="game-name"><img
+                    src="/home/pauline/Documents/project1/First-Project-Game_Site/loupe-blanc.png"
+                    class="icones"></label>
+            <input type="text" name="game-name" id="game-name">
+        </div>
+        <div>
+            <label class="label" for="category"><img
+                    src="/home/pauline/Documents/project1/First-Project-Game_Site/liste-blanc.png"
+                    class="icones"></label>
+            <select type="text" name="category" id="category">
+                <option value="hasard">jeux de hasard</option>
+                <option value="cartes">jeux de cartes</option>
+                <option value="strategie">jeux de stratégie</option>
+                <option value="reflexion">jeux de réflexion</option>
+            </select>
+        </div>
 
-                <label class="label" for="category">Choisis une catégorie</label>
-                <select class="width50" type="text" name="category" id="category">
-                    <option value="hasard">jeux de hasard</option>
-                    <option value="cartes">jeux de cartes</option>
-                    <option value="strategie">jeux de stratégie</option>
-                    <option value="reflexion">jeux de réflexion</option>
-                </select>
-            </div>
-        </div>
-        
+
     </header>
 
     <section>

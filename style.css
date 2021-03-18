@@ -3,28 +3,19 @@ header {
 }
 
 .flexbox {
-    display: flex;
-    justify-content:space-around;
-}
-
-.flexbox-column {
-    display: flex;
-    flex-direction : column;
+    display: grid;
+    justify-content: space-around;
 }
 
 #logo {
-    margin-left: auto;
-    margin-right: auto;
+    height: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-#sort {
-    width: 100%;
-    background-color: #3E517A;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:auto;
-    margin-bottom: auto;
-    padding-left: 50px;
+.icones{
+    height : 30px;
+    padding : 2px;
 }
 
 h1 {
