@@ -2,38 +2,72 @@ header {
     background-color:#3E517A;
 }
 
-.flexbox {
+.grid {
     display: grid;
-    justify-content: space-around;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    align-items :flex-end;
 }
 
-#logo {
-    height: 100px;
-    padding-left: 10px;
-    padding-right: 10px;
+.logo-img{
+    height:70px;
+    padding-top: 5px;
+    padding-left: 30px;
+    
+}
+
+.nav-padding-bottom {
+    padding-bottom : 15px;
 }
 
 .icones{
-    height : 30px;
-    padding : 2px;
+    height : 20px;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+#search {
+    justify-self:left;
+    padding-left: 10px;
+}
+
+#game-name {
+    width: 300px;
+    height: 20px;
+    background-color  #f9f6f1ff;
+    border-style: solid;
+    border-color: #E63B2E ;
+    border-radius: 5px;
+}
+
+#categories {
+    justify-self:left;
+    padding-left:10px;
+}
+
+#category {
+    width: 300px;
+    height: 25px;
+    background-color  #f9f6f1ff;
+    border-style: solid;
+    border-color: #E63B2E ;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+.selected-option{
+    background-color  #f9f6f1ff;
+    border-style: solid;
+    border-color: #E63B2E ;
+    border-radius: 5px;
+    border-width: 2px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 12pt;
 }
 
 h1 {
     font-family: 'Comfortaa', cursive;
     text-align: center;
     color: #f9f6f1ff;
-}
-
-.label {
-    font-family: 'Comfortaa', cursive;
-    color: #f9f6f1ff;
-    font-size: 12pt;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.width50 {
-    width: 25%;
 }
 
 .font-source{
