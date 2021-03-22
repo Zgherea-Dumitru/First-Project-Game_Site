@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:700&display=swap');
+
+body{
+    font-family: 'Rubik', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(./synthwave-cityscape-4k-6x-1920x1080.jpg);
+    background-size: cover;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*
+HTML
+<nav>
+        <h1>Game</h1>
+        <img>
+        <h1>Place</h1>
+</nav>
+
+nav{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+img{
+    margin: 5px 10px 0px;
+    display: block;
+    height: 10vh;
+}
+
+h1 {
+    animation: colorRotate 5s linear 0s infinite;
+  }
+  
+  @keyframes colorRotate {
+    from {
+      color: #6666ff;
+    }
+    10% {
+      color: #0099ff;
+    }
+    50% {
+      color: #00ff00;
+    }
+    75% {
+      color: #ff3399;
+    }
+    100% {
+      color: #6666ff;
+    }
+  }
+*/
+
+
+/* RETURN BUTTON */
+
+#return{
+    height: 10%;
+    display: flex;
+    align-items: flex-end;
+}
+
+#returnButton{
+    margin: 20px ;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 15px;
+}
+
+/* GAME-STRUCTURE */
+
+#main{
+    height: 80vh;
+    width: 80vw;
+    margin: 0px auto;
+}
+
+/* GAME-SELECT-MODE */
+
+#playerModeButton{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+#onePlayer, #twoPlayers{
+    color: white;
+    padding: 5px;
+    margin: 0px 20px;
+}
+
+.buttons{
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    background-color: #E13434;
+    box-shadow: 0px 8px 0px #9d2323;
+    border: 4px solid #d51c1c;
+    font-size: 30px;
+}
+
+.buttons:hover{
+    top: 5px;
+    box-shadow: 0px 4px 0px #9d2323;
+}
+
+.buttons:active{
+    top: 9px;
+    box-shadow: none;
+}
+
+   /* GAME-TEXT */
+
+#text{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.players{
+    font-size: 20px;
+}
+
+.scoreNumber{
+    font-size: 25px;
+}
+
+#score{
+    font-size: 30px;
+}
+
+p{
+    color: white;
+}
+
+/* GAME */
+
+/* GAME BUTTONS PLAYER 1 && 2*/
+
+#player1Buttons, #player2Buttons {
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+}
+
+#player1Buttons a, #player2Buttons a{
+    height: 33%;
+    width: auto;
+    margin: 100px auto;
+    font-size: 50px;
+}
+
+/* GAME CENTRAL */
+
+#game{
+    width: 100%;
+    height: 65%;
+    margin-bottom: 20px;
+    display: inline-flex;
+    text-align: center;
+}
+#playerWin{
+    margin-top: 20px;
+    font-size: 25px;
+    animation: colorRotate 5s linear 0s infinite;
+}
+  
+@keyframes colorRotate {
+    from {
+      color: #6666ff;
+    }
+    10% {
+      color: #0099ff;
+    }
+    50% {
+      color: #00ff00;
+    }
+    75% {
+      color: #ff3399;
+    }
+    100% {
+      color: #6666ff;
+    }
+}
+
+#player1Buttons, #player2Buttons{
+    height: 100%;
+    width: 20%;
+    background-color: rgba(244, 170, 170, 0.6);
+}
+
+#centralGame{
+    width: 100%;
+}
+
+#playerChoise{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+    height: auto;
+} 
+
+#playerChoise div p{
+    background-color: rgba(244, 170, 170, 0.6);
+    padding: 0px 20px;
+    border-radius: 10px;
+    font-size: 150px;
+}
+
+#scissors{
+    transform: rotate(90deg);
+}
+
+#playerChoise p{
+    font-size: 30px;
+}
+
+/* START */
+
+#start{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#start a{
+    padding: 0px 5px;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-height: 400px){
+    body{
+        overflow: hidden;
+    }
+    #return{
+        margin-top: 30px;;
+    }
+    #main{
+        position: relative;
+        top: -50px;
+    }    
+    #playerChoise div p{
+        font-size: 50px;
+    }
+    #player1Buttons a, #player2Buttons a{
+        font-size: 30px;
+    }
+    #player1Buttons, #player2Buttons{
+        height: 100%;
+        width: 20%;
+        background-color: transparent;
+    }
+    #playerChoise{
+        margin: 10px;
+    }
+    #playerChoise div p{
+        padding: 5px 15px;
+    }
+    .buttons{
+        font-size: 15px;
+    }
+    .players{
+        font-size: 15px;
+    }
+    .scoreNumber{
+        font-size: 20px;
+    }
+    #score{
+        font-size: 25px;
+    }
+    #returnButton{
+        padding: 0px 5px;
+    }
+    #start a{
+        position: relative;
+        top: -15px;
+    }
+}
+
+  @media only screen and (orientation:portrait){
+        body{ 
+        display:none; 
+        }
+  }

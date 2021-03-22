@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fushimi</title>
+    <link href="oxo.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="return"><a id="returnButton" class="buttons">&#8249;</a></div>
+    <section id="main">
+
+        <section id="playerModeButton">
+            <a id="onePlayer" class="buttons">One Player</a>
+            <a id="twoPlayers" class="buttons">Two Players</a>
+        </section>
+
+        <section id="text">
+            <p class="players">Player 1</p>
+            <p class="scoreNumber" id="scorePlayer1">10</p>
+            <p id="score">SCORE</p>
+            <p class="scoreNumber" id="scorePlayer2">2</p>
+            <p class="players">Player 2</p>
+        </section>
+
+        <section id="game">
+            <div id="player1Buttons">
+                <div><a class="buttons">🪨</a></div>
+                <div><a class="buttons">📄</a></div>
+                <div><a class="buttons">✂️</a></div>
+            </div>
+
+            <div id="centralGame">
+                <p id="playerWin">🎉 Player  1  wins! 🎉</p>
+                <div id="playerChoise">
+                    <div><p>🪨</p></div>
+                    <p>VS</p>
+                    <div><p id="scissors">✂️</p></div>
+                </div>
+            </div>
+
+            <div id="player2Buttons">
+                <div><a class="buttons">🪨</a></div>
+                <div><a class="buttons">📄</a></div>
+                <div><a class="buttons">✂️</a></div>
+            </div>
+        </section>
+        <section id="start">
+            <a class="buttons">START</a>
+        </section>
+    </section>
+    <script src="oxo.js"></script>
+</body>
+
+</html>
