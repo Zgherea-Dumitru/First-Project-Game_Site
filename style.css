@@ -1,44 +1,57 @@
-body{
+body {
     height: 100vh;
     margin: 0%;
     padding: 0%;
     font-family: 'Rubik', sans-serif;
-  }
-  
-  #games{
+}
+
+@media screen and (max-width: 600px) {
+    #games {
+        flex-direction: column;
+    }
+}
+
+#games {
     display: flex;
     justify-content: space-around;
     height: auto;
     width: 90vw;
     margin: 10px auto;
     flex-wrap: wrap;
-  }
+}
 
 /*Design header starts here*/
 
 header {
-    background-color:#3E517A;
+    background-color: #3E517A;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .grid-header {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
 }
 
 .grid-header {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    align-items :flex-end;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 #logo {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: nowrap;
 }
 
-.logo-img{
-    height:70px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 30px;
+.logo-img {
+    height: 70px;
 }
 
-.site-name{
+.site-name {
     font-family: 'Comfortaa', cursive;
     font-size: xx-large;
     margin-left: 15px;
@@ -47,49 +60,48 @@ header {
     color: #f9f6f1ff;
 }
 
-.nav-padding-bottom {
-    padding-bottom : 15px;
-}
-
-.icones{
-    height : 20px;
+.icones {
+    height: 20px;
     padding-right: 5px;
     vertical-align: middle;
 }
 
 #search {
-    justify-self:left;
-    padding-left: 10px;
+    /*flex-wrap: nowrap;*/
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: 50px;
 }
 
 #game-name {
     width: 300px;
     height: 20px;
-    background-color  #f9f6f1ff;
+    background-color #f9f6f1ff;
     border-style: solid;
-    border-color: #E63B2E ;
+    border-color: #E63B2E;
     border-radius: 5px;
 }
 
 #categories-nav {
-    justify-self:left;
-    padding-left:10px;
+    /*flex-wrap: nowrap;*/
+    padding-top: 30px;
+    margin-right: auto;
 }
 
 #category-selector {
     width: 300px;
     height: 25px;
-    background-color  #f9f6f1ff;
+    background-color #f9f6f1ff;
     border-style: solid;
-    border-color: #E63B2E ;
+    border-color: #E63B2E;
     border-radius: 5px;
     border-width: 2px;
 }
 
-.selected-option{
-    background-color  #f9f6f1ff;
+.selected-option {
+    background-color #f9f6f1ff;
     border-style: solid;
-    border-color: #E63B2E ;
+    border-color: #E63B2E;
     border-radius: 5px;
     border-width: 2px;
     font-family: 'Source Code Pro', monospace;
@@ -102,7 +114,7 @@ h1 {
     color: #f9f6f1ff;
 }
 
-.font-source{
+.font-source {
     font-family: 'Source Code Pro', monospace;
 }
 
@@ -113,7 +125,7 @@ h1 {
 /*Design footer starts here*/
 
 footer {
-    background-color:#3E517A;
+    background-color: #3E517A;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     padding-top: 15px;
@@ -121,7 +133,7 @@ footer {
 }
 
 footer>div {
-    padding-right : 15px;
+    padding-right: 15px;
     padding-left: 15px;
 }
 

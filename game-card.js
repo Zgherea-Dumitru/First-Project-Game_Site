@@ -10,7 +10,7 @@ favorButton1.addEventListener('click', function () {
     } else {
         favorButton1.classList.remove("favoriteChecked");
         favorButton1.classList.add("favoriteUnchecked");
-        favorButton1.innerHTML = "+";
+        favorButton1.innerHTML = "&#9829";
         return chechFavorButton = 0;
     }
 });

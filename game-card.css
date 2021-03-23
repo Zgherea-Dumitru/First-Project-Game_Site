@@ -10,15 +10,16 @@
   border: 7px solid #615979;
   background-color: #615979;
   box-shadow: 0px 15px 0px #3d3650, 0px 20px 7px black;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 
 }
 
 .gameImgFushimi{
   width: auto;
   height: 65%;
-  background-image: url("fushimi.png");
+  background-color: white;
+  background-image: url("img/fushimi.jpg");
   background-size: cover;
   border-radius: 15px 15px 0px 0px;
   display: flex;
@@ -30,8 +31,7 @@
 .gameImgCards{
   width: auto;
   height: 65%;
-  background-color: #C4C4C4;
-  background-image: url("playing-cards.png");
+  background-image: url("img/solitaire.jpg");
   background-size: cover;
   border-radius: 15px 15px 0px 0px;
   display: flex;
@@ -43,7 +43,8 @@
 .gameImgOxo{
   width: auto;
   height: 65%;
-  background-image: url("tic-tactoe.png");
+  background-color: white;
+  background-image: url("img/tic-tac-toe.png");
   background-size: cover;
   border-radius: 15px 15px 0px 0px;
   display: flex;
@@ -55,7 +56,7 @@
 .gameImgDice{
   width: auto;
   height: 65%;
-  background-image: url("hasard.jpg");
+  background-image: url("img/hasard.jpg");
   background-size: cover;
   border-radius: 15px 15px 0px 0px;
   display: flex;
@@ -67,7 +68,7 @@
 .gameImgSnake{
   width: auto;
   height: 65%;
-  background-image: url("snake.jpg");
+  background-image: url("img/snake.jpg");
   background-size: cover;
   border-radius: 15px 15px 0px 0px;
   display: flex;
@@ -79,7 +80,7 @@
 .gameImgPoker{
   width: auto;
   height: 65%;
-  background-image: url("cartes.jpg");
+  background-image: url("img/cartes.jpg");
   background-size: cover;
   border-radius: 15px 15px 0px 0px;
   display: flex;
@@ -91,7 +92,7 @@
 .gameImgChess{
   width: auto;
   height: 65%;
-  background-image: url("chess.jpg");
+  background-image: url("img/chess.jpg");
   background-size: cover;
   border-radius: 15px 15px 0px 0px;
   display: flex;
@@ -103,7 +104,7 @@
 .gameImgScrabble{
   width: auto;
   height: 65%;
-  background-image: url("scrabble.jpg");
+  background-image: url("img/scrabble.jpg");
   background-size: cover;
   border-radius: 15px 15px 0px 0px;
   display: flex;
@@ -115,7 +116,8 @@
 .gameImgFreecel{
   width: auto;
   height: 65%;
-  background-image: url("freecel.jpg");
+  background-color: white;
+  background-image: url("img/freecel.png");
   background-size: cover;
   border-radius: 15px 15px 0px 0px;
   display: flex;

@@ -14,19 +14,20 @@
 <body>
     <header class="grid-header">
         <div id="logo">
-            <img class="logo-img" src="logo-gameplace.png" height="150px">
+            <img class="logo-img" src="img/logo-gameplace.png" height="150px">
             <p class="site-name">Game Place</p>
         </div>
-        <div id="search" class="nav-padding-bottom">
-            <label for="game-name"><img src="/home/pauline/Documents/project1/First-Project-Game_Site/loupe-blanc.png"
+        <div id="search">
+            <label for="game-name"><img src="/home/pauline/Documents/project1/First-Project-Game_Site/img/loupe-blanc.png"
                     class="icones"></label>
             <input type="text" name="game-name" id="game-name">
         </div>
-        <div id="categories-nav" class="nav-padding-bottom">
+        <div id="categories-nav">
             <label for="category-selector"><img
-                    src="/home/pauline/Documents/project1/First-Project-Game_Site/liste-blanc.png"
+                    src="/home/pauline/Documents/project1/First-Project-Game_Site/img/liste-blanc.png"
                     class="icones"></label>
             <select class="selected-option" type="text" name="category-selector" id="category-selector">
+                <option class="selected-option" value="default">Toutes les catégories</option>
                 <option class="selected-option" value="hasard">Jeux de hasard</option>
                 <option class="selected-option" value="cartes">Jeux de cartes</option>
                 <option class="selected-option" value="strategie">Jeux de stratégie</option>
@@ -76,7 +77,7 @@
         </div>
         <div class="game" id="cards">
             <div class="gameImgCards">
-                <h1 class="gameName">CARDS</h1>
+                <h1 class="gameName">SOLITAIRE</h1>
             </div>
             <div class="lowerBox">
                 <a class="startButton">START</a>
@@ -245,6 +246,7 @@
             <button id="submit">Send</button>
         </div>
     </footer>
+<script src="game-card.js"></script>
 </body>
 
 </html>
