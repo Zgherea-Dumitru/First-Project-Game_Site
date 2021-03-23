@@ -1,20 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:700&display=swap');
 
-body{
-  height: 100vh;
-  margin: 0%;
-  padding: 0%;
-  font-family: 'Rubik', sans-serif;
-}
-
-#games{
-  display: flex;
-  justify-content: space-around;
-  height: auto;
-  width: 90vw;
-  margin: 0px auto;
-}
-
 /* Game card style */
 .game{
 
@@ -25,13 +10,16 @@ body{
   border: 7px solid #615979;
   background-color: #615979;
   box-shadow: 0px 15px 0px #3d3650, 0px 20px 7px black;
+  margin-top: 10px;
+  margin-bottom: 30px;
 
 }
 
-.gameImg{
+.gameImgFushimi{
   width: auto;
   height: 65%;
-  background-color: #C4C4C4;
+  background-image: url("fushimi.png");
+  background-size: cover;
   border-radius: 15px 15px 0px 0px;
   display: flex;
   align-items: flex-start;
@@ -39,13 +27,111 @@ body{
   box-shadow: inset 0 0 3px 7px #473f5e;
 }
 
+.gameImgCards{
+  width: auto;
+  height: 65%;
+  background-color: #C4C4C4;
+  background-image: url("playing-cards.png");
+  background-size: cover;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: inset 0 0 3px 7px #473f5e;
+}
+
+.gameImgOxo{
+  width: auto;
+  height: 65%;
+  background-image: url("tic-tactoe.png");
+  background-size: cover;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: inset 0 0 3px 7px #473f5e;
+}
+
+.gameImgDice{
+  width: auto;
+  height: 65%;
+  background-image: url("hasard.jpg");
+  background-size: cover;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: inset 0 0 3px 7px #473f5e;
+}
+
+.gameImgSnake{
+  width: auto;
+  height: 65%;
+  background-image: url("snake.jpg");
+  background-size: cover;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: inset 0 0 3px 7px #473f5e;
+}
+
+.gameImgPoker{
+  width: auto;
+  height: 65%;
+  background-image: url("cartes.jpg");
+  background-size: cover;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: inset 0 0 3px 7px #473f5e;
+}
+
+.gameImgChess{
+  width: auto;
+  height: 65%;
+  background-image: url("chess.jpg");
+  background-size: cover;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: inset 0 0 3px 7px #473f5e;
+}
+
+.gameImgScrabble{
+  width: auto;
+  height: 65%;
+  background-image: url("scrabble.jpg");
+  background-size: cover;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: inset 0 0 3px 7px #473f5e;
+}
+
+.gameImgFreecel{
+  width: auto;
+  height: 65%;
+  background-image: url("freecel.jpg");
+  background-size: cover;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: inset 0 0 3px 7px #473f5e;
+}
+
+
 .gameName{
   box-shadow: 0 2px 3px 1px #473f5e;
   background-color: #615979;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  font-size: 25px;
+  font-weight: 300;
+  font-size: 22px;
   display: inline;
   margin: 0px;
   height: 20%;
@@ -63,6 +149,28 @@ body{
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+.coming-soon{
+  width: auto;
+  height: auto;
+  box-shadow: 0px 8px 0px #9d2323, 0px 8px 20px #222222;
+  background-color: #E13434;
+  border: 4px solid #d51c1c;
+  border-radius: 10px;
+  color: #f9f6f1ff;
+  font-size: x-large;
+  padding : 4px;
+}
+
+.lowerBox-comingSoon{
+  height: 35%;
+  width: auto;
+  border-radius: 0px 0px 5px 5px;
+  background-color: #615979;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Buttons style */
