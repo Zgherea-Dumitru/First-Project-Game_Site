@@ -5,16 +5,11 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
-@media screen and (max-width: 600px) {
-    #games {
-        flex-direction: column;
-    }
-}
-
 #games {
     display: flex;
     justify-content: space-around;
     height: auto;
+    width: 90vw;
     margin: auto;
     flex-wrap: wrap;
 }

@@ -3,13 +3,13 @@
 /* Game card style */
 .game{
 
-  display: inline-block;
+  /*display: inline-block;*/
   width: 350px;
   height: 250px;
   border-radius: 20px;
-  border: 7px solid #615979;
-  background-color: #615979;
-  box-shadow: 0px 15px 0px #3d3650, 0px 20px 7px black;
+  border: 7px solid #3E517A;
+  background-color: #3E517A;
+  box-shadow: 0px 15px 0px #2c3a57, 0px 20px 7px black;
   margin-top: 20px;
   margin-bottom: 40px;
 
@@ -22,7 +22,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  box-shadow: inset 0 0 3px 7px #473f5e;
+  box-shadow: inset 0 0 3px 7px #2c3a57;
 }
 
 .bg-fushimi {
@@ -74,7 +74,7 @@
 
 .gameName{
   box-shadow: 0 2px 3px 1px #473f5e;
-  background-color: #615979;
+  background-color: #3E517A;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
@@ -92,7 +92,7 @@
   height: 35%;
   width: auto;
   border-radius: 0px 0px 5px 5px;
-  background-color: #615979;
+  background-color: #3E517A;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -114,7 +114,7 @@
   height: 35%;
   width: auto;
   border-radius: 0px 0px 5px 5px;
-  background-color: #615979;
+  background-color: #3E517A;
   display: flex;
   align-items: center;
   justify-content: center;
