@@ -15,117 +15,62 @@
 
 }
 
-.gameImgFushimi{
+.gameImg{
   width: auto;
   height: 65%;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: inset 0 0 3px 7px #473f5e;
+}
+
+.bg-fushimi {
   background-color: white;
   background-image: url("img/fushimi.jpg");
   background-size: cover;
-  border-radius: 15px 15px 0px 0px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  box-shadow: inset 0 0 3px 7px #473f5e;
 }
 
-.gameImgCards{
-  width: auto;
-  height: 65%;
+.bg-solitaire {
   background-image: url("img/solitaire.jpg");
   background-size: cover;
-  border-radius: 15px 15px 0px 0px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  box-shadow: inset 0 0 3px 7px #473f5e;
 }
-
-.gameImgOxo{
-  width: auto;
-  height: 65%;
+.bg-oxo{
   background-color: white;
   background-image: url("img/tic-tac-toe.png");
   background-size: cover;
-  border-radius: 15px 15px 0px 0px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  box-shadow: inset 0 0 3px 7px #473f5e;
 }
 
-.gameImgDice{
-  width: auto;
-  height: 65%;
+.bg-dice{
   background-image: url("img/hasard.jpg");
   background-size: cover;
-  border-radius: 15px 15px 0px 0px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  box-shadow: inset 0 0 3px 7px #473f5e;
 }
 
-.gameImgSnake{
-  width: auto;
-  height: 65%;
+.bg-snake{
   background-image: url("img/snake.jpg");
   background-size: cover;
-  border-radius: 15px 15px 0px 0px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  box-shadow: inset 0 0 3px 7px #473f5e;
 }
 
-.gameImgPoker{
-  width: auto;
-  height: 65%;
+.bg-poker{
   background-image: url("img/cartes.jpg");
   background-size: cover;
-  border-radius: 15px 15px 0px 0px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  box-shadow: inset 0 0 3px 7px #473f5e;
 }
 
-.gameImgChess{
-  width: auto;
-  height: 65%;
+.bg-chess{
   background-image: url("img/chess.jpg");
   background-size: cover;
-  border-radius: 15px 15px 0px 0px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  box-shadow: inset 0 0 3px 7px #473f5e;
 }
 
-.gameImgScrabble{
-  width: auto;
-  height: 65%;
+.bg-scrabble{
   background-image: url("img/scrabble.jpg");
   background-size: cover;
-  border-radius: 15px 15px 0px 0px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  box-shadow: inset 0 0 3px 7px #473f5e;
 }
 
-.gameImgFreecel{
-  width: auto;
-  height: 65%;
+.bg-freecel{
   background-color: white;
   background-image: url("img/freecel.png");
   background-size: cover;
-  border-radius: 15px 15px 0px 0px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  box-shadow: inset 0 0 3px 7px #473f5e;
 }
-
 
 .gameName{
   box-shadow: 0 2px 3px 1px #473f5e;

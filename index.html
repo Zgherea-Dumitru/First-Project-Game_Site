@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Source+Code+Pro:wght@500&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -17,28 +18,31 @@
             <img class="logo-img" src="img/logo-gameplace.png" height="150px">
             <p class="site-name">Game Place</p>
         </div>
-        <div id="search">
-            <label for="game-name"><img src="/home/pauline/Documents/project1/First-Project-Game_Site/img/loupe-blanc.png"
-                    class="icones"></label>
-            <input type="text" name="game-name" id="game-name">
-        </div>
-        <div id="categories-nav">
-            <label for="category-selector"><img
-                    src="/home/pauline/Documents/project1/First-Project-Game_Site/img/liste-blanc.png"
-                    class="icones"></label>
-            <select class="selected-option" type="text" name="category-selector" id="category-selector">
-                <option class="selected-option" value="default">Toutes les catégories</option>
-                <option class="selected-option" value="hasard">Jeux de hasard</option>
-                <option class="selected-option" value="cartes">Jeux de cartes</option>
-                <option class="selected-option" value="strategie">Jeux de stratégie</option>
-                <option class="selected-option" value="reflexion">Jeux de réflexion</option>
-            </select>
+        <div class="sort-game">
+            <div id="search">
+                <label for="game-name"><img
+                        src="/home/pauline/Documents/project1/First-Project-Game_Site/img/loupe-blanc.png"
+                        class="icones"></label>
+                <input type="text" name="game-name" id="search-game-name">
+            </div>
+            <div id="categories-nav">
+                <label for="category-selector"><img
+                        src="/home/pauline/Documents/project1/First-Project-Game_Site/img/liste-blanc.png"
+                        class="icones"></label>
+                <select class="selected-option" type="text" name="category-selector" id="category-selector">
+                    <option class="selected-option" value="default">Toutes les catégories</option>
+                    <option class="selected-option" value="hasard">Jeux de hasard</option>
+                    <option class="selected-option" value="cartes">Jeux de cartes</option>
+                    <option class="selected-option" value="strategie">Jeux de stratégie</option>
+                    <option class="selected-option" value="reflexion">Jeux de réflexion</option>
+                </select>
+            </div>
         </div>
     </header>
 
     <section id="games">
         <div class="game" id="fushimi">
-            <div class="gameImgFushimi">
+            <div class="gameImg bg-fushimi">
                 <h1 class="gameName">FUSHIMI</h1>
             </div>
             <div class="lowerBox">
@@ -76,7 +80,7 @@
             </div>
         </div>
         <div class="game" id="cards">
-            <div class="gameImgCards">
+            <div class="gameImg bg-solitaire">
                 <h1 class="gameName">SOLITAIRE</h1>
             </div>
             <div class="lowerBox">
@@ -123,7 +127,7 @@
             </div>
         </div>
         <div class="game" id="oxo">
-            <div class="gameImgOxo">
+            <div class="gameImg bg-oxo">
                 <h1 class="gameName">OXO</h1>
             </div>
             <div class="lowerBox">
@@ -170,7 +174,7 @@
             </div>
         </div>
         <div class="game" id="dice">
-            <div class="gameImgDice">
+            <div class="gameImg bg-dice">
                 <h1 class="gameName">DICE</h1>
             </div>
             <div class="lowerBox-comingSoon">
@@ -178,7 +182,7 @@
             </div>
         </div>
         <div class="game" id="snake">
-            <div class="gameImgSnake">
+            <div class="gameImg bg-snake">
                 <h1 class="gameName">SNAKE</h1>
             </div>
             <div class="lowerBox-comingSoon">
@@ -186,7 +190,7 @@
             </div>
         </div>
         <div class="game" id="poker">
-            <div class="gameImgPoker">
+            <div class="gameImg bg-poker">
                 <h1 class="gameName">POKER</h1>
             </div>
             <div class="lowerBox-comingSoon">
@@ -194,7 +198,7 @@
             </div>
         </div>
         <div class="game" id="chess">
-            <div class="gameImgChess">
+            <div class="gameImg bg-chess">
                 <h1 class="gameName">CHESS</h1>
             </div>
             <div class="lowerBox-comingSoon">
@@ -202,7 +206,7 @@
             </div>
         </div>
         <div class="game" id="scrabble">
-            <div class="gameImgScrabble">
+            <div class="gameImg bg-scrabble">
                 <h1 class="gameName">SCRABBLE</h1>
             </div>
             <div class="lowerBox-comingSoon">
@@ -210,7 +214,7 @@
             </div>
         </div>
         <div class="game" id="freecel">
-            <div class="gameImgFreecel">
+            <div class="gameImg bg-freecel">
                 <h1 class="gameName">FREECEL</h1>
             </div>
             <div class="lowerBox-comingSoon">
@@ -246,7 +250,7 @@
             <button id="submit">Send</button>
         </div>
     </footer>
-<script src="game-card.js"></script>
+    <script src="game-card.js"></script>
 </body>
 
 </html>
