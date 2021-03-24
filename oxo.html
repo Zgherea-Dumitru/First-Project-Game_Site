@@ -10,49 +10,59 @@
 </head>
 
 <body>
-    <div id="return"><a id="returnButton" class="buttons">&#8249;</a></div>
-    <section id="main">
+    <div id="return"><a id="returnButton" class="buttons" href="index.html">&#8249;</a></div>
+    <section id="wrapper">
+        
+        <section id="main">
 
-        <section id="playerModeButton">
-            <a id="onePlayer" class="buttons">One Player</a>
-            <a id="twoPlayers" class="buttons">Two Players</a>
-        </section>
+            <section id="playerModeButton">
+                <a id="onePlayer" class="buttons">One Player</a>
+                <a id="twoPlayers" class="buttons">Two Players</a>
+            </section>
 
-        <section id="text">
-            <p class="players">Player 1</p>
-            <p class="scoreNumber" id="scorePlayer1">10</p>
-            <p id="score">SCORE</p>
-            <p class="scoreNumber" id="scorePlayer2">2</p>
-            <p class="players">Player 2</p>
-        </section>
+            <section id="text">
+                <p class="players">Player 1</p>
+                <p class="scoreNumber" id="scorePlayer1">10</p>
+                <p id="score">SCORE</p>
+                <p class="scoreNumber" id="scorePlayer2">2</p>
+                <p class="players">Player 2</p>
+            </section>
 
-        <section id="game">
-            <div id="player1Buttons">
-                <div><a class="buttons">🪨</a></div>
-                <div><a class="buttons">📄</a></div>
-                <div><a class="buttons">✂️</a></div>
-            </div>
-
-            <div id="centralGame">
-                <p id="playerWin">🎉 Player  1  wins! 🎉</p>
-                <div id="playerChoise">
-                    <div><p>🪨</p></div>
-                    <p>VS</p>
-                    <div><p id="scissors">✂️</p></div>
+            <section id="game">
+                <div id="player1Buttons">
+                    <div><a class="buttons">🪨</a></div>
+                    <div><a class="buttons">📄</a></div>
+                    <div><a class="buttons">✂️</a></div>
                 </div>
-            </div>
 
-            <div id="player2Buttons">
-                <div><a class="buttons">🪨</a></div>
-                <div><a class="buttons">📄</a></div>
-                <div><a class="buttons">✂️</a></div>
-            </div>
-        </section>
-        <section id="start">
-            <a class="buttons">START</a>
+                <div id="centralGame">
+                    <p id="playerWin">🎉 Player 1 wins! 🎉</p>
+                    <div id="playerChoise">
+                        <div>
+                            <p>🪨</p>
+                        </div>
+                        <p>VS</p>
+                        <div>
+                            <p id="scissors">✂️</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="player2Buttons">
+                    <div><a class="buttons">🪨</a></div>
+                    <div><a class="buttons">📄</a></div>
+                    <div><a class="buttons">✂️</a></div>
+                </div>
+            </section>
+            <section id="start">
+                <a class="buttons">START</a>
+            </section>
         </section>
     </section>
-    <script src="oxo.js"></script>
+    <div id="warning-message">
+        <img src="./iconfinder_screen-rotation_326583.png">
+        <h1>this website is only viewable in landscape mode</h1>
+    </div>
 </body>
 
 </html>

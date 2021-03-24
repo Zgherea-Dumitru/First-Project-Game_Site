@@ -6,7 +6,7 @@ body{
     height: 100vh;
     margin: 0px;
     padding: 0px;
-    background-image: url(./synthwave-cityscape-4k-6x-1920x1080.jpg);
+    background: linear-gradient(#E9E4F0, #D3CCE3);
     background-size: cover;
 }
 
@@ -14,49 +14,6 @@ body{
     margin: 0px;
     padding: 0px;
 }
-/*
-HTML
-<nav>
-        <h1>Game</h1>
-        <img>
-        <h1>Place</h1>
-</nav>
-
-nav{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-}
-
-img{
-    margin: 5px 10px 0px;
-    display: block;
-    height: 10vh;
-}
-
-h1 {
-    animation: colorRotate 5s linear 0s infinite;
-  }
-  
-  @keyframes colorRotate {
-    from {
-      color: #6666ff;
-    }
-    10% {
-      color: #0099ff;
-    }
-    50% {
-      color: #00ff00;
-    }
-    75% {
-      color: #ff3399;
-    }
-    100% {
-      color: #6666ff;
-    }
-  }
-*/
-
 
 /* RETURN BUTTON */
 
@@ -71,6 +28,7 @@ h1 {
     color: white;
     border-radius: 50%;
     padding: 2px 15px;
+    text-decoration: none;
 }
 
 /* GAME-STRUCTURE */
@@ -100,15 +58,15 @@ h1 {
     cursor: pointer;
     border-radius: 10px;
     position: relative;
-    background-color: #E13434;
-    box-shadow: 0px 8px 0px #9d2323;
-    border: 4px solid #d51c1c;
+    background-color: rgb(67, 67, 67);
+    box-shadow: 0px 8px rgb(7, 7, 7);
+    border: 2px solid rgb(77, 76, 76);
     font-size: 30px;
 }
 
 .buttons:hover{
     top: 5px;
-    box-shadow: 0px 4px 0px #9d2323;
+    box-shadow: 0px 4px 0px rgb(7, 7, 7);
 }
 
 .buttons:active{
@@ -194,7 +152,7 @@ p{
 #player1Buttons, #player2Buttons{
     height: 100%;
     width: 20%;
-    background-color: rgba(244, 170, 170, 0.6);
+    background-color: rgb(67, 67, 67, 0.6);
 }
 
 #centralGame{
@@ -211,7 +169,7 @@ p{
 } 
 
 #playerChoise div p{
-    background-color: rgba(244, 170, 170, 0.6);
+    background-color: rgb(67, 67, 67, 0.6);
     padding: 0px 20px;
     border-radius: 10px;
     font-size: 150px;
@@ -249,7 +207,7 @@ p{
     }
     #main{
         position: relative;
-        top: -50px;
+        top: -45px;
     }    
     #playerChoise div p{
         font-size: 50px;
@@ -281,7 +239,7 @@ p{
         font-size: 25px;
     }
     #returnButton{
-        padding: 0px 5px;
+        padding: 0.3rem 0.6rem;
     }
     #start a{
         position: relative;
@@ -289,8 +247,38 @@ p{
     }
 }
 
-  @media only screen and (orientation:portrait){
-        body{ 
-        display:none; 
-        }
+#warning-message{ 
+    display: none;
   }
+@media only screen and (orientation:portrait){
+    #wrapper { 
+    display:none; 
+    }
+    #warning-message { 
+    display: inline-block;
+    text-align: center;
+    margin-top: 40%;
+    } 
+    #warning-message img{ 
+    margin: 30px 30%;
+    }
+    #warning-message h1{ 
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+    }
+    #return{
+        position: absolute;
+        font-size: 1rem;
+    }
+    #returnButton{
+        top: 20px;
+        padding: 0.2rem 0.7rem;
+        font-size: 1.4rem;
+  }
+@media only screen and (orientation:landscape){
+    #warning-message{
+    display:none; 
+    }
+  }
+
+
