@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Source+Code+Pro:wght@500&display=swap"
     rel="stylesheet">
   <link href="about.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,37 +16,80 @@
 
 <body>
 
-  <h1>Les Fondateurs</h1>
+  <header class="grid-header">
+    <div id="logo">
+      <a href="./index.html">
+        <img class="logo-img" src="img/logo-gameplace.png" height="150px">
+      </a>
+      <p class="site-name">Game Place</p>
+    </div>
+    <div class="sort-game">
+      <div id="search">
+        <label for="game-name"><img src="./img/loupe-blanc.png" class="icones"></label>
+        <input type="text" name="game-name" id="search-game-name">
+      </div>
+    </div>
+  </header>
 
-  <div class="box">
+  <section>
+    <h1 class="title-h1">Les Fondateurs</h1>
 
-        <div class="sousbox">
-          <img
-          src="file:///home/wilder/T%C3%A9l%C3%A9chargements/wolves-1341881_1920.jpg"/>
+    <div class="box">
+
+      <div class="sousbox">
+        <img class="fondateur-img" src="./img/pauline.png" width="150px" height="150px" alt="pauline" />
         <h3>Pauline De Ro</h3>
-      <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
-        Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme
-      </p>
-    </div>
+        <p class="text-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris
+          nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
 
-        <div class="sousbox">
-          <img
-          src="file:///home/wilder/T%C3%A9l%C3%A9chargements/mountain-1862077_1920.jpg"/>
-        <h3>Dumitru Zgherea</h3>  
-      <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
-        Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme
-      </p>
-    </div>
+      <div class="sousbox">
+        <img class="fondateur-img" src="./img/dumitru.png" width="150px" height="150px" alt="dumitru" />
+        <h3>Dumitru Zgherea</h3>
+        <p class="text-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris
+          nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
 
-        <div class="sousbox">
-          <img
-          src="file:///home/wilder/T%C3%A9l%C3%A9chargements/space-11099_1280.jpg"/>
-          <h3>Sam Azinfar </h3>    
-      <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
-        Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme
-      </p>
+      <div class="sousbox">
+        <img class="fondateur-img" src="./img/sam.png" width="150px" height="150px" alt="sam" />
+        <h3>Sam Azinfar </h3>
+        <p class="text-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris
+          nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
     </div>
-  </div>
+  </section>
+  <footer>
+    <div>
+      <h2 class="footer-title">About us</h2>
+      <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua.</p>
+      <p class="footer-text text-decoration"><a href="./index.html">Read more ></a></p>
+    </div>
+    <div>
+      <h2 class="footer-title">Address</h2>
+      <p class="footer-text">Rue des Comédiens 22</p>
+      <p class="footer-text">1000 Brussels</p>
+      <p class="footer-text">info@gameplace.be</p>
+    </div>
+    <div>
+      <h2 class="footer-title">Contact us</h2>
+      <div class="flexbox-contact">
+        <label for="email" class="footer-text">Your email</label>
+        <input type="text" name="email" id="email">
+      </div>
+      <div class="flexbox-contact">
+        <label for="message" class="footer-text">Your message</label>
+        <input type="text" name="message" id="message">
+      </div>
+      <button id="submit">Send</button>
+    </div>
+  </footer>
 
 </body>
 
