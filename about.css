@@ -55,6 +55,7 @@ header {
 
 #search {
   flex-wrap: nowrap;
+  min-width: 300px;
   padding-top: 30px;
   padding-left: 10px;
   padding-left: 10px;
