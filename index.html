@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Game Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="game-card.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Source+Code+Pro:wght@500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header class="grid-header">
+        <div id="logo">
+            <img class="logo-img" src="img/logo-gameplace.png" height="150px">
+            <p class="site-name">Game Place</p>
+        </div>
+        <div class="sort-game">
+            <div id="search">
+                <label for="game-name"><img
+                        src="./img/loupe-blanc.png"
+                        class="icones"></label>
+                <input type="text" name="game-name" id="search-game-name">
+            </div>
+            <div id="categories-nav">
+                <label for="category-selector"><img
+                        src="./img/liste-blanc.png"
+                        class="icones"></label>
+                <select class="selected-option" type="text" name="category-selector" id="category-selector">
+                    <option class="selected-option" value="default">Toutes les catégories</option>
+                    <option class="selected-option" value="hasard">Jeux de hasard</option>
+                    <option class="selected-option" value="cartes">Jeux de cartes</option>
+                    <option class="selected-option" value="strategie">Jeux de stratégie</option>
+                    <option class="selected-option" value="reflexion">Jeux de réflexion</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <section id="games">
+        <div class="game" id="fushimi">
+            <div class="gameImg bg-fushimi">
+                <h1 class="gameName">FUSHIMI</h1>
+            </div>
+            <div class="lowerBox">
+                <a class="startButton" href="./oxo.html">START</a>
+                <a class="iButton" href="#popup1">i</a>
+                <a class="favoriteUnchecked" id="favoriteClass1">&#9829</a>
+            </div>
+            <div class="overlay" id="popup1">
+                <div class="popup">
+                    <a class="close" href="#">&times;</a>
+                    <div class="popUpImg"></div>
+                    <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies mi at purus dictum
+                        vestibulum. Donec at neque elementum eros porta accumsan. Vestibulum purus lectus, faucibus in
+                        elit non, consequat eleifend est. Nullam elementum justo magna, in tincidunt est sagittis id.
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        Nulla dapibus felis tortor.
+
+                        Suspendisse iaculis mi est, eu tincidunt libero elementum nec. Sed ornare libero quis suscipit
+                        pretium. Donec a nisi pretium, porttitor lorem sed, eleifend nisl. Donec dapibus accumsan nisi,
+                        at laoreet nisi condimentum ac. Pellentesque et vulputate arcu. Sed suscipit metus et dui
+                        consequat, vitae auctor augue fermentum. Proin congue velit id sagittis maximus.
+
+                        Praesent in ex non dolor porttitor pretium a id metus. Ut euismod et turpis id mollis. Aliquam
+                        leo sem, consequat id dictum vitae, aliquet tempus tortor. Mauris dapibus tortor mi, sed
+                        placerat nisl eleifend sed. Aliquam hendrerit dui at consequat aliquam. Nullam nec auctor nunc,
+                        non dictum nisl. Fusce dignissim, ante sit amet pellentesque dapibus, leo erat varius est, sit
+                        amet vestibulum lacus lacus ac massa. Nunc non felis suscipit, pulvinar neque eget, sodales
+                        diam. Nullam congue eleifend nunc, quis interdum augue mollis sit amet. Nam sit amet neque
+                        consectetur, commodo est eget, egestas felis. Quisque sodales ante a pulvinar porta. Nullam
+                        mattis varius diam, nec euismod massa placerat quis.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="game" id="cards">
+            <div class="gameImg bg-solitaire">
+                <h1 class="gameName">SOLITAIRE</h1>
+            </div>
+            <div class="lowerBox">
+                <a class="startButton" >START</a>
+                <a class="iButton" href="#popup2">i</a>
+                <a class="favoriteUnchecked" id="favoriteClass2">&#9829</a>
+            </div>
+            <div class="overlay" id="popup2">
+                <div class="popup">
+                    <a class="close" href="#">&times;</a>
+                    <div class="popUpImg"></div>
+                    <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies mi at purus
+                        dictum
+                        vestibulum. Donec at neque elementum eros porta accumsan. Vestibulum purus lectus, faucibus
+                        in
+                        elit non, consequat eleifend est. Nullam elementum justo magna, in tincidunt est sagittis
+                        id.
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                        egestas.
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        Nulla dapibus felis tortor.
+
+                        Suspendisse iaculis mi est, eu tincidunt libero elementum nec. Sed ornare libero quis
+                        suscipit
+                        pretium. Donec a nisi pretium, porttitor lorem sed, eleifend nisl. Donec dapibus accumsan
+                        nisi,
+                        at laoreet nisi condimentum ac. Pellentesque et vulputate arcu. Sed suscipit metus et dui
+                        consequat, vitae auctor augue fermentum. Proin congue velit id sagittis maximus.
+
+                        Praesent in ex non dolor porttitor pretium a id metus. Ut euismod et turpis id mollis.
+                        Aliquam
+                        leo sem, consequat id dictum vitae, aliquet tempus tortor. Mauris dapibus tortor mi, sed
+                        placerat nisl eleifend sed. Aliquam hendrerit dui at consequat aliquam. Nullam nec auctor
+                        nunc,
+                        non dictum nisl. Fusce dignissim, ante sit amet pellentesque dapibus, leo erat varius est,
+                        sit
+                        amet vestibulum lacus lacus ac massa. Nunc non felis suscipit, pulvinar neque eget, sodales
+                        diam. Nullam congue eleifend nunc, quis interdum augue mollis sit amet. Nam sit amet neque
+                        consectetur, commodo est eget, egestas felis. Quisque sodales ante a pulvinar porta. Nullam
+                        mattis varius diam, nec euismod massa placerat quis.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="game" id="oxo">
+            <div class="gameImg bg-oxo">
+                <h1 class="gameName">OXO</h1>
+            </div>
+            <div class="lowerBox">
+                <a class="startButton" href="./morphion.html">START</a>
+                <a class="iButton" href="#popup3">i</a>
+                <a class="favoriteUnchecked" id="favoriteClass3">&#9829</a>
+            </div>
+            <div class="overlay" id="popup3">
+                <div class="popup">
+                    <a class="close" href="#">&times;</a>
+                    <div class="popUpImg"></div>
+                    <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies mi at purus
+                        dictum
+                        vestibulum. Donec at neque elementum eros porta accumsan. Vestibulum purus lectus, faucibus
+                        in
+                        elit non, consequat eleifend est. Nullam elementum justo magna, in tincidunt est sagittis
+                        id.
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                        egestas.
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        Nulla dapibus felis tortor.
+
+                        Suspendisse iaculis mi est, eu tincidunt libero elementum nec. Sed ornare libero quis
+                        suscipit
+                        pretium. Donec a nisi pretium, porttitor lorem sed, eleifend nisl. Donec dapibus accumsan
+                        nisi,
+                        at laoreet nisi condimentum ac. Pellentesque et vulputate arcu. Sed suscipit metus et dui
+                        consequat, vitae auctor augue fermentum. Proin congue velit id sagittis maximus.
+
+                        Praesent in ex non dolor porttitor pretium a id metus. Ut euismod et turpis id mollis.
+                        Aliquam
+                        leo sem, consequat id dictum vitae, aliquet tempus tortor. Mauris dapibus tortor mi, sed
+                        placerat nisl eleifend sed. Aliquam hendrerit dui at consequat aliquam. Nullam nec auctor
+                        nunc,
+                        non dictum nisl. Fusce dignissim, ante sit amet pellentesque dapibus, leo erat varius est,
+                        sit
+                        amet vestibulum lacus lacus ac massa. Nunc non felis suscipit, pulvinar neque eget, sodales
+                        diam. Nullam congue eleifend nunc, quis interdum augue mollis sit amet. Nam sit amet neque
+                        consectetur, commodo est eget, egestas felis. Quisque sodales ante a pulvinar porta. Nullam
+                        mattis varius diam, nec euismod massa placerat quis.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="game" id="dice">
+            <div class="gameImg bg-dice">
+                <h1 class="gameName">DICE</h1>
+            </div>
+            <div class="lowerBox-comingSoon">
+                <div class="coming-soon">COMING SOON</div>
+            </div>
+        </div>
+        <div class="game" id="snake">
+            <div class="gameImg bg-snake">
+                <h1 class="gameName">SNAKE</h1>
+            </div>
+            <div class="lowerBox-comingSoon">
+                <div class="coming-soon">COMING SOON</div>
+            </div>
+        </div>
+        <div class="game" id="poker">
+            <div class="gameImg bg-poker">
+                <h1 class="gameName">POKER</h1>
+            </div>
+            <div class="lowerBox-comingSoon">
+                <div class="coming-soon">COMING SOON</div>
+            </div>
+        </div>
+        <div class="game" id="chess">
+            <div class="gameImg bg-chess">
+                <h1 class="gameName">CHESS</h1>
+            </div>
+            <div class="lowerBox-comingSoon">
+                <div class="coming-soon">COMING SOON</div>
+            </div>
+        </div>
+        <div class="game" id="scrabble">
+            <div class="gameImg bg-scrabble">
+                <h1 class="gameName">SCRABBLE</h1>
+            </div>
+            <div class="lowerBox-comingSoon">
+                <div class="coming-soon">COMING SOON</div>
+            </div>
+        </div>
+        <div class="game" id="freecel">
+            <div class="gameImg bg-freecel">
+                <h1 class="gameName">FREECEL</h1>
+            </div>
+            <div class="lowerBox-comingSoon">
+                <div class="coming-soon">COMING SOON</div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div>
+            <h2 class="footer-title">About us</h2>
+            <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+            <p class="footer-text"><a href="#">Read more ></a></p>
+        </div>
+        <div>
+            <h2 class="footer-title">Address</h2>
+            <p class="footer-text">Rue des Comédiens 22</p>
+            <p class="footer-text">1000 Brussels</p>
+            <p class="footer-text">info@gameplace.be</p>
+        </div>
+        <div>
+            <h2 class="footer-title">Contact us</h2>
+            <div class="flexbox-contact">
+                <label for="email" class="footer-text">Your email</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div class="flexbox-contact">
+                <label for="message" class="footer-text">Your message</label>
+                <input type="text" name="message" id="message">
+            </div>
+            <button id="submit">Send</button>
+        </div>
+    </footer>
+    <script src="game-card.js"></script>
+</body>
+
+</html>

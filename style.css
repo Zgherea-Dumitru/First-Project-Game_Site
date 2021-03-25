@@ -1,0 +1,186 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+#games {
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    width: 90vw;
+    margin: 0px auto 5%;
+    flex-wrap: wrap;
+}
+
+/*Design header starts here*/
+
+header {
+    background-color: #3E517A;
+    width: 100vw;
+    padding: 10px 0px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.grid-header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#logo {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.logo-img {
+    height: 70px;
+    padding-left: 20px;
+}
+
+.site-name {
+    font-family: 'Comfortaa', cursive;
+    font-size: xx-large;
+    margin-left: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #f9f6f1ff;
+}
+
+.sort-game {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+}
+
+.icones {
+    height: 20px;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+#search {
+    flex-wrap: nowrap;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-left: 10px;
+}
+
+#search-game-name {
+    width: 300px;
+    height: 20px;
+    background-color: #f9f6f1ff;
+    border-style: solid;
+    border-color: #E63B2E;
+    border-radius: 5px;
+}
+
+#categories-nav {
+    flex-wrap: nowrap;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-left: 10px;
+}
+
+#category-selector {
+    width: 300px;
+    height: 25px;
+    background-color: #f9f6f1ff;
+    border-style: solid;
+    border-color: #E63B2E;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+.selected-option {
+    background-color: #f9f6f1ff;
+    border-style: solid;
+    border-color: #E63B2E;
+    border-radius: 5px;
+    border-width: 2px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 12pt;
+}
+
+h1 {
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    color: #f9f6f1ff;
+}
+
+.font-source {
+    font-family: 'Source Code Pro', monospace;
+}
+
+/*Design Header stops here*/
+
+/*Design game-card : see game-card.css*/
+
+/*Design footer starts here*/
+
+footer {
+    background-color: #3E517A;
+    width: auto;
+    height: auto;
+    display: inline-flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+footer div{
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 30%;
+}
+
+.footer-title {
+    font-family: 'Comfortaa', cursive;
+    color: #f9f6f1ff;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #E63B2E;
+}
+
+.footer-text {
+    font-family: 'Source Code Pro', monospace;
+    color: #f9f6f1ff;
+}
+
+.flexbox-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 15px;
+}
+
+@media only screen and (orientation:portrait){
+    footer {
+        display: inline-block;
+        text-align: center;
+    }
+    footer div{
+        width: auto;
+        text-align: center;
+    }
+    .icones {
+        padding-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    footer div{
+        width: auto;
+        text-align: center;
+    }
+    .sort-game {
+        display: flex;
+        justify-content: center;
+    }
+}

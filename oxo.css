@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:700&display=swap');
+
+body{
+    font-family: 'Rubik', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(#E9E4F0, #D3CCE3);
+    background-size: cover;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* RETURN BUTTON */
+
+#return{
+    height: 10%;
+    display: flex;
+    align-items: flex-end;
+}
+
+#returnButton{
+    margin: 20px ;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 12px;
+    text-decoration: none;
+}
+
+/* GAME-STRUCTURE */
+
+#main{
+    height: 80vh;
+    width: 80vw;
+    margin: 0px auto;
+}
+
+/* GAME-SELECT-MODE */
+
+#playerModeButton{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+#onePlayer, #twoPlayers{
+    color: white;
+    padding: 5px;
+    margin: 0px 20px;
+}
+
+.buttons{
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    background-color: rgb(67, 67, 67);
+    box-shadow: 0px 8px rgb(7, 7, 7);
+    border: 2px solid rgb(77, 76, 76);
+    font-size: 30px;
+}
+
+.buttons:hover{
+    top: 5px;
+    box-shadow: 0px 4px 0px rgb(7, 7, 7);
+}
+
+.buttons:active{
+    top: 9px;
+    box-shadow: none;
+}
+
+   /* GAME-TEXT */
+
+#text{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.players{
+    font-size: 20px;
+}
+
+.scoreNumber{
+    font-size: 25px;
+}
+
+#score{
+    font-size: 30px;
+}
+
+p{
+    color: white;
+}
+
+/* GAME */
+
+/* GAME BUTTONS PLAYER 1 && 2*/
+
+#player1Buttons, #player2Buttons {
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+}
+
+#player1Buttons a, #player2Buttons a{
+    height: 33%;
+    width: auto;
+    margin: 100px auto;
+    font-size: 50px;
+}
+
+/* GAME CENTRAL */
+
+#game{
+    width: 100%;
+    height: 65%;
+    margin-bottom: 20px;
+    display: inline-flex;
+    text-align: center;
+}
+#playerWin{
+    margin-top: 20px;
+    font-size: 25px;
+    animation: colorRotate 5s linear 0s infinite;
+}
+  
+@keyframes colorRotate {
+    from {
+      color: #6666ff;
+    }
+    10% {
+      color: #0099ff;
+    }
+    50% {
+      color: #00ff00;
+    }
+    75% {
+      color: #ff3399;
+    }
+    100% {
+      color: #6666ff;
+    }
+}
+
+#player1Buttons, #player2Buttons{
+    height: 100%;
+    width: 20%;
+    background-color: rgb(67, 67, 67, 0.6);
+}
+
+#centralGame{
+    width: 100%;
+}
+
+#playerChoise{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+    height: auto;
+} 
+
+#playerChoise div p{
+    background-color: rgb(67, 67, 67, 0.6);
+    padding: 0px 20px;
+    border-radius: 10px;
+    font-size: 150px;
+}
+
+#scissors{
+    transform: rotate(90deg);
+}
+
+#playerChoise p{
+    font-size: 30px;
+}
+
+/* START */
+
+#start{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#start a{
+    padding: 0px 5px;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-height: 400px){
+    body{
+        overflow: hidden;
+    }
+    #return{
+        margin-top: 30px;;
+    }
+    #main{
+        position: relative;
+        top: -45px;
+    }    
+    #playerChoise div p{
+        font-size: 50px;
+    }
+    #player1Buttons a, #player2Buttons a{
+        font-size: 30px;
+    }
+    #player1Buttons, #player2Buttons{
+        height: 100%;
+        width: 20%;
+        background-color: transparent;
+    }
+    #playerChoise{
+        margin: 10px;
+    }
+    #playerChoise div p{
+        padding: 5px 15px;
+    }
+    .buttons{
+        font-size: 15px;
+    }
+    .players{
+        font-size: 15px;
+    }
+    .scoreNumber{
+        font-size: 20px;
+    }
+    #score{
+        font-size: 25px;
+    }
+    #returnButton{
+        padding: 0.3rem 0.6rem;
+    }
+    #start a{
+        position: relative;
+        top: -15px;
+    }
+}
+
+#warning-message{ 
+    display: none;
+  }
+@media only screen and (orientation:portrait){
+    #wrapper { 
+    display:none; 
+    }
+    #warning-message { 
+    display: inline-block;
+    text-align: center;
+    margin-top: 40%;
+    } 
+    #warning-message img{ 
+    margin: 30px 30%;
+    }
+    #warning-message h1{ 
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+    }
+    #return{
+        position: absolute;
+        font-size: 1rem;
+    }
+    #returnButton{
+        top: 20px;
+        padding: 0.2rem 0.7rem;
+        font-size: 1.4rem;
+  }
+@media only screen and (orientation:landscape){
+    #warning-message{
+    display:none; 
+    }
+  }
+
+
