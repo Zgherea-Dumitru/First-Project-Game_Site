@@ -275,10 +275,10 @@ p{
         padding: 0.2rem 0.7rem;
         font-size: 1.4rem;
   }
+}
 @media only screen and (orientation:landscape){
     #warning-message{
     display:none; 
     }
   }
-
 
