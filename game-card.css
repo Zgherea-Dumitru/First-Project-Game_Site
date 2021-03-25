@@ -224,13 +224,25 @@
 
 .popUpImg{
   border-radius: 5px 5px 0px 0px;
-  background-color: #C4C4C4;
+  background-image: url('./img/help.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: black;
   height: 30%;
   width: auto;
 }
 
 .popup .content {
-  height: 70%;
+  height: 60%;
   width: auto;
   overflow: auto;
+  padding : 15px;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.popup-title {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 20pt;
+  color: #3E517A;
 }
