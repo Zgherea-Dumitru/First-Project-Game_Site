@@ -1,0 +1,215 @@
+body {
+  background-color: #f9f6f1ff;
+  margin: 0;
+  padding: 0;
+}
+
+/*Design header starts here*/
+
+header {
+  background-color: #3E517A;
+  width: 100vw;
+  padding: 10px 0px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.grid-header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#logo {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+.logo-img {
+  height: 70px;
+  padding-left: 20px;
+}
+
+.site-name {
+  font-family: 'Comfortaa', cursive;
+  font-size: xx-large;
+  margin-left: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #f9f6f1ff;
+}
+
+.sort-game {
+  display: flex;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.icones {
+  height: 20px;
+  padding-right: 5px;
+  vertical-align: middle;
+}
+
+#search {
+  flex-wrap: nowrap;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-left: 10px;
+}
+
+#search-game-name {
+  width: 300px;
+  height: 20px;
+  background-color: #f9f6f1ff;
+  border-style: solid;
+  border-color: #E63B2E;
+  border-radius: 5px;
+}
+
+
+h1 {
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+  color: #f9f6f1ff;
+}
+
+/*Design Header stops here*/
+
+/*Design section fondateurs starts here*/
+
+section{
+  padding: 20px;
+}
+
+.box {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.title-h1 {
+  color: #3E517A;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+h3 {
+  font-family: 'Comfortaa', sans-serif;
+  color:rgb(48, 48, 48);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-paragraph {
+  font-family: 'Source Code Pro', monospace;
+  color: rgb(48, 48, 48);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.fondateur-img {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #3E517A;
+  margin: 10px;
+}
+
+.sousbox {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 300px;
+}
+
+.social-icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+/* end fondateurs */
+
+/*Design footer starts here*/
+
+footer {
+  background-color: #3E517A;
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+footer div{
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 30%;
+}
+
+.footer-title {
+  font-family: 'Comfortaa', cursive;
+  color: #f9f6f1ff;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #E63B2E;
+}
+
+.footer-text {
+  font-family: 'Source Code Pro', monospace;
+  color: #f9f6f1ff;
+}
+
+.flexbox-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 15px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #f9f6f1ff;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #f9f6f1ff;
+}
+
+@media only screen and (orientation:portrait){
+  footer {
+      display: inline-block;
+      text-align: center;
+  }
+  footer div{
+      width: auto;
+      text-align: center;
+  }
+  .icones {
+      padding-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  footer div{
+      width: auto;
+      text-align: center;
+  }
+  .sort-game {
+      display: flex;
+      justify-content: center;
+  }
+}
